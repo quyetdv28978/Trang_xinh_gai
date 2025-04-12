@@ -76,6 +76,7 @@ const responses = {
     'được': 'Cảm ơn em nhiều lắm. Anh sẽ cố gắng làm tốt hơn.',
     'giận': 'Anh biết em giận là đúng. Anh sẽ cố gắng không để em phải buồn nữa.',
     'nhớ': 'Anh cũng rất nhớ em. Xin lỗi vì đã không trả lời tin nhắn của em.',
+    'hay': 'Haha',
     'Ngủ': 'Giờ tớ mới ngủ',
     'wow': 'hehe',
     'Thích': ':)',
