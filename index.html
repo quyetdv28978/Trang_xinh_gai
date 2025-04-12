@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gửi Lời Xin Lỗi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Xin lỗi vì đã làm em buồn</h1>
+            
+            <div class="message">
+                <p class="main-text">Anh biết một ngày không trả lời tin nhắn của em là một ngày rất dài...</p>
+                <p>Em có biết không, mỗi lần nhìn thấy tin nhắn của em mà không thể trả lời ngay, anh đều cảm thấy có lỗi. Anh biết em đã đợi, đã lo lắng, và có thể đã buồn...</p>
+                <p>Anh xin lỗi vì đã không thông báo trước với em. Anh hứa sẽ cố gắng sắp xếp thời gian tốt hơn, để không bao giờ để em phải đợi chờ như vậy nữa.</p>
+                <p class="special">Vì em là người đặc biệt nhất của anh ❤️</p>
+            </div>
+
+            <div class="heart-container">
+                <div class="flower-heart"></div>
+                <div class="timer-container">
+                    <p class="timer-label">Thời gian anh đã để em đợi chờ</p>
+                    <div class="timer">
+                        <span id="hours">24</span> giờ 
+                        <span id="minutes">00</span> phút 
+                        <span id="seconds">00</span> giây
+                    </div>
+                    <p class="promise">Anh hứa sẽ không để điều này lặp lại nữa</p>
+                </div>
+            </div>
+
+            <div class="message-icons">
+                <div class="icon">💌</div>
+                <div class="icon">💭</div>
+                <div class="icon">💝</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot -->
+    <div class="chat-container">
+        <div class="chat-button" onclick="toggleChat()">
+            <i class="fas fa-comment"></i>
+        </div>
+        <div class="chat-box" id="chatBox">
+            <div class="chat-header">
+                <span>Trò chuyện với anh</span>
+                <button class="close-btn" onclick="toggleChat()">×</button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message received">
+                    Em có thể nói gì đó với anh không?
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Nhập tin nhắn..." onkeypress="handleKeyPress(event)">
+                <button onclick="sendMessage()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
